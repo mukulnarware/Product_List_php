@@ -1,0 +1,16 @@
+echo"<table><tr><th>category</th><<th>subcategory</th><th>Id</th><th>Name</th><th>Brand</th></tr>";
+foreach($products as $value1 => $v1 )
+{
+foreach($v1 as $value2 => $v2)
+{
+foreach($v2 as $value3 => $v3)
+{
+
+echo"<tr><td>$value1</td><td>$value2</td><td>$v3[id]</td><td>$v3[name]</td><td>$v3[brand]</td></tr>";
+}
+
+}
+}
+echo"</table>";
+
+?>
